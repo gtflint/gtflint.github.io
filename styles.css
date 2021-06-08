@@ -24,11 +24,11 @@
   z-index: -1;
 }
 .static {
-  background: 15ff15;
+  background-color: 15ff15;
 }
 .bg1::after {
-  background: 151515;
+  background-color: 151515;
 }
 .bg2::after {
-  background: 151515;
+  background-color: 151515;
 }
