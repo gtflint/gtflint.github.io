@@ -3,8 +3,6 @@ html{
 }
 body{
   background: #151515;
-  overflow-y: hidden;
-  overflow-x: hidden;
 }
 body::-webkit-scrollbar {
   display: none;
