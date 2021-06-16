@@ -5,6 +5,8 @@ body{
   background: #151515;
   scrollbar-width: none;
   -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
   display: none;
 }
 body,html{
