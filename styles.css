@@ -1,12 +1,12 @@
 html{
   scroll-behavior: smooth;
-}
-body{
-  background: #151515;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
-body::-webkit-scrollbar {
+body{
+  background: #151515;
+}
+html::-webkit-scrollbar {
   display: none;
 }
 body,html{
