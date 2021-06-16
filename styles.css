@@ -3,6 +3,9 @@ html{
 }
 body{
   background: #151515;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  display: none;
 }
 body,html{
   height:100%
