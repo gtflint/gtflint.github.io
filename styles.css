@@ -39,7 +39,7 @@ img {
 }
 .parallax {
   left: -10px;
-  height: 100vh;
+  height: 70vh;
   width: 100vw;
   display: flex;
   background-attachment: fixed;
