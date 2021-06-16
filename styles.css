@@ -5,6 +5,8 @@ html{
 }
 body{
   background: #151515;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 html::-webkit-scrollbar {
   display: none;
