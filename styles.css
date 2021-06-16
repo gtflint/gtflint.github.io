@@ -4,7 +4,6 @@ html{
 body{
   background: #151515;
   overflow-y: scroll;
-  overflow-x: hidden;
 }
 body,html{
   height:100%
