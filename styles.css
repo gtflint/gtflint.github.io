@@ -22,13 +22,13 @@ img {
 .glow {
   box-shadow:0px 0px 5px 10px #151515;
 }
-.large_devider{
+.large-devider{
   height:125px;
 }
-.medium_devider{
+.medium-devider{
   height:85px;
 }
-.small_devider{
+.small-devider{
   height:45px;
 }
 .wrapper {
