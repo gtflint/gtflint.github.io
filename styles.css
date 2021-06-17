@@ -25,6 +25,9 @@ img {
 .devider{
   height:125px;
 }
+.small_devider{
+  height:45px;
+}
 .wrapper {
   height: 100vh;
   overflow-x: hidden;
