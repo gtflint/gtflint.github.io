@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/portfolio/portfolio.html.css" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+    <title>GTFlint</title>
+    <link rel="icon" type="image/png" href="/Icons/GTFlint-NoBG.png">
+    <script type="text/javascript" src="/portfolio/portfolio.html.js"></script>
+    <script type="text/javascript" src="/navBar.js"></script>
+  </head>
+  <body>
+    <main>
+      <div id="navbar" class="glow">
+        <a class="navbarItem left" href="/index.html#home">Home</a>
+	<a class="navbarItem left" href="/portfolio/portfolio.html">Portfolio</a>
+
+        <a class="navbarItem right" href="/link/email.html" target="_blank"><img src="/Icons/email-Icon.png" class="inverted"></a>
+      </div>
+
+      <div style="z-index:99;position:absolute;top:8vh;left:calc(98vw - 10px);">
+        <a href="#about"><p><i id="scrollArrow" class="arrow down"></i></p></a>
+      </div>
+      
+      <div style="z-index:98;position:fixed;width:50vw;left:25vw;top:50px;">
+        <a href="/index.html#home"><img id="headerImg" src="/Icons/GTFlint.png" class="glow" style="transition:0.45s;width:180px;height:120px;text-align:center;display:block;"></a>
+      </div>
+      
+      <div class="section" id="home">
+        <table>
+	  <tr>
+            <td class="large-devider"></td>
+	  </tr>
+	  <tr>
+            <td><h1>Portfolio</h1></td>
+	  </tr>
+	  <tr>
+            <td>
+		<p>
+Click on the buttons to filter a category:
+		</p>
+			<div id="btnContainer">
+  				<button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  				<button class="btn" onclick="filterSelection('html')"> Coded in HTML</button>
+  				<button class="btn" onclick="filterSelection('css')"> Coded in CSS</button>
+  				<button class="btn" onclick="filterSelection('js')"> Coded in JavaScript</button>
+			</div>
+	    </td> 
+	  </tr>
+	  <tr>
+	    <td class="small-devider"></td>
+	  </tr>
+	  <tr>
+		<td>
+			<div style="width:80vw;">
+				<div class="row">
+  					<div class="column html css js">
+    						<div class="content">
+      							<img src="/icons/GTFlint.png" style="width:100%">
+      							<h2>This Website!</h2>
+      							<p>
+This website was created by me! It was written from the ground up in HTML, CSS and JavaScript. Click for more detail about how & why this came together as it did.<br>
+<br>
+<a href="/portfolio/this_website">More...</a>
+							</p>
+   						</div>
+  					</div>
+				</div>
+			</div>
+		</td>
+	  </tr>
+	  <tr>
+            <td class="small-devider"></td>
+	  </tr>
+	  <tr>
+            <td> <a class="navbarItem contactMe" href="/link/email.html" target="_blank"><img src="/Icons/email-Icon.png" class="inverted"></a> </td>
+	  </tr>
+	  <tr>
+            <td><p>&#169 George T. Flint. Hosted by <a href="https://pages.github.com" target="_blank">GitHub Pages</a> from <a href="https://github.com/gtflint/gtflint.github.io" target="_blank">this source code.</a></p></td>
+	  </tr>
+	  <tr>
+	    <td class="small-devider"></td>
+	  </tr>
+	</table>
+      </div>
+     <script>
+	filterSelection('all');
+        var btnContainer = document.getElementById("btnContainer");
+	var btns = btnContainer.getElementsByClassName("btn");
+	for (var i = 0; i < btns.length; i++) {	
+	  btns[i].addEventListener("click", function(){
+	    var current = document.getElementsByClassName("active");
+	    current[0].className = current[0].className.replace(" active", "");
+	    this.className += " active";
+	  });
+	}
+     </script>
+   </main>
+  </body>
+</html>
