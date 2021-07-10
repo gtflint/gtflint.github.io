@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/styles.css" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+    <title>GTFlint</title>
+    <link rel="icon" type="image/png" href="/Icons/GTFlint-NoBG.png">
+    <script type="text/javascript" src="navBar.js"></script>
+  </head>
+  <body>
+    <main>
+      <div id="navbar" class="glow">
+        <a class="navbarItem left" href="#home">Home</a>
+        <a class="navbarItem left" href="#about">Bio</a>
+	<a class="navbarItem left" href="#portfolio">Portfolio</a>
+
+        <a class="navbarItem right" href="/link/email.html" target="_blank"><img src="/Icons/email-Icon.png" class="inverted"></a>
+      </div>
+
+      <div style="z-index:99;position:absolute;top:8vh;left:calc(98vw - 10px);">
+        <a href="#about"><p><i id="scrollArrow" class="arrow down"></i></p></a>
+      </div>
+      
+      <div style="z-index:98;position:fixed;width:90vw;left:5vw;top:50px;">
+        <a href="#home"><img id="headerImg" src="/Icons/GTFlint.png" class="glow" style="transition:0.45s;width:360px;height:240px;text-align:center;display:block;"></a>
+      </div>
+      
+      <div class="section" id="home" style="height:100vh;">
+        <div style="position:relative;top:100px;text-align:center;">
+	  <div class="medium-devider"></div>
+          <h1>Hi!</h1>
+          <p>I'm George.<br><br>Here are some of the things I've made and done.</p>
+ 	  <div class="small-devider"></div>
+        </div>
+      </div>
+
+      <div class="parallax" style="background-image:url('/Icons/GTFlint-small.png')"></div>
+
+      <div class="section" id="about">
+	<table>
+	  <tr>
+            <td class="large-devider"></td>
+	  </tr>
+	  <tr>
+            <td><h2 style="margin-right:10vw;margin-left:10vw;">About Me</h2></td>
+	  </tr>
+	  <tr>
+            <td><p style="margin-right:10vw;margin-left:10vw;">
+
+I'm George. I can code in C#, Python, and to a certain extent HTML & CSS.<br>
+<br>
+I enjoy spending my free time coding, mostly creating or modifying games as I love the community and spirit that is built up behind some games, and it is great to be able to feel that you are contributing. More information can be found <a href="">here</a>.
+
+	    </p></td> 
+	  </tr>
+	  <tr>
+            <td class="medium-devider"></td>
+	  </tr>
+	</table>
+      </div>
+            
+      <div class="parallax" style="background-image:url('/Icons/GTFlint-small.png')"></div>
+
+      <div class="section" id="portfolio">
+         <table>
+	  <tr>
+            <td class="extra-large-devider"></td>
+	  </tr>
+	  <tr>
+            <td><iframe src="/embeds/SlideShow.html" scrolling="no" style="border:0;width:90vw;height:50vh;overflow:hidden;"></iframe></td>
+	  </tr>
+	  <tr>
+            <td class="medium-devider"></td>
+	  </tr>
+	</table>
+      </div>
+
+      <div class="parallax" style="background-image:url('/Icons/GTFlint-small.png')"></div>
+
+      <div class="section" id="siteInfo">
+         <table>
+	  <tr>
+            <td class="small-devider"></td>
+	  </tr>
+	  <tr>
+            <td> <a class="navbarItem contactMe" href="/link/email.html" target="_blank"><img src="/Icons/email-Icon.png" class="inverted"></a> </td>
+	  </tr>
+	  <tr>
+            <td><p>&#169 George T. Flint. Hosted by <a href="https://pages.github.com" target="_blank">GitHub Pages</a> from <a href="https://github.com/gtflint/gtflint.github.io" target="_blank">this source code.</a></p></td>
+	  </tr>
+	  <tr>
+	    <td class="small-devider"></td>
+	  </tr>
+	</table>
+      </div>
+
+	<script>
+	/*if (window.innerWidth < 400 || window.innerHeight < 100) {
+		window.location.replace("index-small-scrn.html")
+	}*/
+	var prevScrollpos = window.pageYOffset;
+	window.onscroll = function() {
+		var currentScrollPos = window.pageYOffset;
+  		if (currentScrollPos > 90) {
+	    		if (currentScrollPos > 100){
+   				if (currentScrollPos > 110){
+   					document.getElementById("headerImg").style.width = "180px";
+  				document.getElementById("headerImg").style.height = "120px";
+  				} else {
+					document.getElementById("headerImg").style.width = "240px";
+  					document.getElementById("headerImg").style.height = "160px";
+				}
+  			} else {
+				document.getElementById("headerImg").style.width = "300px";
+  				document.getElementById("headerImg").style.height = "200px";
+			}
+  		} else {
+			document.getElementById("headerImg").style.width = "360px";
+  			document.getElementById("headerImg").style.height = "240px";
+		}
+		prevScrollpos = currentScrollPos;
+	}
+	</script>
+
+   </main>
+  </body>
+</html>
