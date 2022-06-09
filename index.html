@@ -31,13 +31,13 @@
             <td class="medium-devider"></td>
 	  </tr>
 	  <tr>
-	    <td><span style="text-align:centre"><h1>Hi!33</h1></span></td>
+	    <td><div style="text-align:centre"><h1>Hi!2</h1></div></td>
 	  </tr>
 	  <tr>
-	    <td><span style="text-align:centre"><p>I'm George.<br></p></span></td>
+	    <td><div style="text-align:centre"><p>I'm George.<br></p></div></td>
 	  </tr>
 	  <tr>
-	    <td><p style="text-align:centre">Here are some of the things I've made and done.</p></td> 
+	    <td><div style="text-align:centre"><p>Here are some of the things I've made and done.</p></div></td> 
 	  </tr>
 	  <tr>
             <td class="small-devider"></td>
@@ -124,18 +124,22 @@ I enjoy spending my free time coding, mostly creating or modifying games as I lo
 	    		if (currentScrollPos > 100){
    				if (currentScrollPos > 110){
    					document.getElementById("headerImg").style.width = "180px";
-  				document.getElementById("headerImg").style.height = "120px";
+  					document.getElementById("headerImg").style.height = "120px";
+  					document.getElementById("headerImg").style.left = "calc(50vw - 60px)";
   				} else {
 					document.getElementById("headerImg").style.width = "240px";
   					document.getElementById("headerImg").style.height = "160px";
+  					document.getElementById("headerImg").style.left = "calc(50vw - 120px)";
 				}
   			} else {
 				document.getElementById("headerImg").style.width = "300px";
   				document.getElementById("headerImg").style.height = "200px";
+  				document.getElementById("headerImg").style.left = "calc(50vw - 150px)";
 			}
   		} else {
 			document.getElementById("headerImg").style.width = "360px";
   			document.getElementById("headerImg").style.height = "240px";
+  			document.getElementById("headerImg").style.left = "calc(50vw - 180px)";
 		}
 		prevScrollpos = currentScrollPos;
 	}
