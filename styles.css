@@ -47,7 +47,7 @@ a:not(.navbarItem):active {
   color: #e6b74f;
 }
 .glow {
-  box-shadow:0px 0px 5px 10px #151515;
+  box-shadow:0px 0px 5px 0px #151515;
 }
 .extra-large-devider{
   height:165px;
