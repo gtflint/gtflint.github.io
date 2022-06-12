@@ -72,7 +72,7 @@ a:not(.navbarItem):active {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #151515;/*white;*/
   text-shadow: 0 0 5px #000;
 }
 .parallax {
