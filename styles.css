@@ -2,12 +2,12 @@ html{
   scroll-behavior: smooth;
 }
 body{
-  background: #151515;
+  background: #white; /*#151515;*/
   overflow-y: auto;
   overflow-x: hidden;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  color:white;
+  color:#151515; /*white;*/
   max-width:80vw;
 }
 body::-webkit-scrollbar {
